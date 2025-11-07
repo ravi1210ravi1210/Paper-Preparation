@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux Operating System – PTU Study Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <div><a href="index.html"><b>PTU Study Hub</b></a></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="datesheet.html">Date Sheet</a>
+      <a href="androin.html">Android</a>
+      <a href="cyber.html">Cyber Laws</a>
+      <a href="soft.html">Software Engg</a>
+      <a href="os.html">OS</a>
+      <a href="infosec.html">InfoSec</a>
+      <a href="math.html">Math</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Linux Operating System (UGCA1935)</h1>
+    <p><strong>Exam Date:</strong> 24-Nov-2025 | <strong>Session:</strong> Morning | <strong>Marks:</strong> 2M + 10M
+      Pattern</p>
+
+    <h2>📘 2 Marks – Short Questions</h2>
+    <ol>
+      <li><b>What is Linux?</b><br>Linux is an open-source operating system based on UNIX, managed under the GPL
+        license.</li>
+      <li><b>Who developed Linux?</b><br>It was developed by Linus Torvalds in 1991.</li>
+      <li><b>What is the kernel?</b><br>The kernel is the core part of the OS that interacts directly with hardware.
+      </li>
+      <li><b>What is a shell?</b><br>A shell is a command interpreter that lets users interact with the OS using
+        commands.</li>
+      <li><b>What is the file system?</b><br>It organizes and stores data in files and directories.</li>
+      <li><b>What is meant by open-source?</b><br>Software whose source code is available freely for modification and
+        redistribution.</li>
+      <li><b>What is a command in Linux?</b><br>A command is an instruction to perform a specific task (e.g., ls, cd,
+        mkdir).</li>
+      <li><b>What is a home directory?</b><br>The default directory assigned to each user in Linux.</li>
+      <li><b>Define inode.</b><br>Inode is a data structure containing information about a file.</li>
+      <li><b>What is a process?</b><br>A running instance of a program in memory.</li>
+    </ol>
+
+    <h2>🧠 10 Marks – Long Questions</h2>
+
+    <h3>Q1. Explain the Architecture of Linux with a Neat Diagram.</h3>
+    <p><b>Answer:</b> The Linux architecture has 4 layers:</p>
+    <ul>
+      <li><b>1. Hardware Layer:</b> Physical devices like CPU, memory, I/O.</li>
+      <li><b>2. Kernel:</b> Manages resources, device drivers, system calls.</li>
+      <li><b>3. Shell:</b> Interface between user and kernel.</li>
+      <li><b>4. Application Layer:</b> User-level programs (editors, compilers, browsers).</li>
+    </ul>
+    <pre>
++----------------------------+
+|  User Applications         |
++----------------------------+
+|  Shell / Command Interface |
++----------------------------+
+|  Kernel (Device Drivers)   |
++----------------------------+
+|  Hardware (CPU, Memory)    |
++----------------------------+
+    </pre>
+
+    <h3>Q2. What are the main features of Linux?</h3>
+    <ul>
+      <li>Multitasking and multiuser support</li>
+      <li>Portability (works on multiple hardware)</li>
+      <li>Security and stability</li>
+      <li>Open-source and free</li>
+      <li>Networking and flexibility</li>
+    </ul>
+
+    <h3>Q3. Explain important Linux commands with examples.</h3>
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td><b>ls</b></td>
+        <td>Lists files and directories</td>
+        <td>ls -l</td>
+      </tr>
+      <tr>
+        <td><b>cd</b></td>
+        <td>Change directory</td>
+        <td>cd /home</td>
+      </tr>
+      <tr>
+        <td><b>mkdir</b></td>
+        <td>Create new directory</td>
+        <td>mkdir myfolder</td>
+      </tr>
+      <tr>
+        <td><b>rm</b></td>
+        <td>Remove file</td>
+        <td>rm file.txt</td>
+      </tr>
+      <tr>
+        <td><b>chmod</b></td>
+        <td>Change file permissions</td>
+        <td>chmod 755 test.sh</td>
+      </tr>
+    </table>
+
+    <h3>Q4. Explain process management in Linux.</h3>
+    <p>Each process in Linux has a unique process ID (PID). Commands like <b>ps</b>, <b>top</b>, and <b>kill</b> are
+      used to manage processes.</p>
+
+    <h3>Q5. Explain shell scripting with an example.</h3>
+    <p>A shell script is a file containing Linux commands executed sequentially.</p>
+    <pre>
+#!/bin/bash
+echo "Enter your name: "
+read name
+echo "Hello, $name! Welcome to Linux."
+    </pre>
+    <p>Save as <b>hello.sh</b> and run using <b>sh hello.sh</b>.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Ravi Singh | PTU Study Hub
+  </footer>
+</body>
+
+</html>

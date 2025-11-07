@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Information Security – PTU Study Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <div><a href="index.html"><b>PTU Study Hub</b></a></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="datesheet.html">Date Sheet</a>
+      <a href="linux.html">Linux</a>
+      <a href="androin.html">Android</a>
+      <a href="cyber.html">Cyber Laws</a>
+      <a href="soft.html">Software Engg</a>
+      <a href="os.html">OS</a>
+      <a href="math.html">Math</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Information Security (UGCA1948)</h1>
+    <p><strong>Exam Date:</strong> 09-Dec-2025 | <strong>Session:</strong> Morning | <strong>Marks:</strong> 2M + 10M
+      Pattern</p>
+
+    <h2>📘 2 Marks – Short Questions</h2>
+    <ol>
+      <li><b>Define Information Security.</b><br>Protection of information from unauthorized access, use, or
+        destruction.</li>
+      <li><b>What is Encryption?</b><br>Process of converting plaintext into ciphertext to protect data.</li>
+      <li><b>What is Decryption?</b><br>Converting ciphertext back to readable plaintext.</li>
+      <li><b>What is Cryptography?</b><br>Science of securing communication using codes and ciphers.</li>
+      <li><b>Define Firewall.</b><br>A security device that filters incoming and outgoing network traffic.</li>
+      <li><b>What is an Attack?</b><br>Any action that compromises the security of information.</li>
+      <li><b>Define Authentication.</b><br>Verifying the identity of a user or system.</li>
+      <li><b>What is Integrity?</b><br>Ensuring data is not altered or tampered with.</li>
+      <li><b>Define Virus.</b><br>Malicious code that replicates and damages systems.</li>
+      <li><b>What is a Digital Certificate?</b><br>An electronic document that verifies identity using public key
+        infrastructure.</li>
+    </ol>
+
+    <h2>🧠 10 Marks – Long Questions</h2>
+
+    <h3>Q1. Explain the CIA Triad in Information Security.</h3>
+    <ul>
+      <li><b>Confidentiality:</b> Ensuring information is accessible only to authorized users.</li>
+      <li><b>Integrity:</b> Maintaining accuracy and completeness of data.</li>
+      <li><b>Availability:</b> Ensuring information is available when needed.</li>
+    </ul>
+    <p><b>Diagram:</b></p>
+    <pre>
+        +-----------------+
+        | Confidentiality |
+        +-----------------+
+                / \
+               /   \
+     +---------+     +----------+
+     | Integrity|     |Availability|
+     +----------+     +------------+
+    </pre>
+
+    <h3>Q2. Explain Symmetric and Asymmetric Encryption.</h3>
+    <ul>
+      <li><b>Symmetric Encryption:</b> Uses same key for encryption and decryption.
+        Example: DES, AES.</li>
+      <li><b>Asymmetric Encryption:</b> Uses public and private keys.
+        Example: RSA, ECC.</li>
+    </ul>
+    <pre>
+Symmetric:   Key → Encrypt → Cipher → Decrypt → Plain
+Asymmetric:  Public Key → Encrypt → Private Key → Decrypt
+    </pre>
+
+    <h3>Q3. Explain different types of Security Attacks.</h3>
+    <ul>
+      <li><b>Active Attack:</b> Altering or modifying data (e.g., DoS, Spoofing).</li>
+      <li><b>Passive Attack:</b> Monitoring data transmission (e.g., Sniffing).</li>
+      <li><b>Phishing:</b> Fake emails to steal credentials.</li>
+      <li><b>Man-in-the-Middle:</b> Intercepting communication between two parties.</li>
+    </ul>
+
+    <h3>Q4. Explain Firewalls and their types.</h3>
+    <ul>
+      <li><b>Packet Filtering Firewall:</b> Filters packets based on IP and ports.</li>
+      <li><b>Proxy Firewall:</b> Acts as an intermediary between user and network.</li>
+      <li><b>Stateful Inspection Firewall:</b> Monitors active connections and traffic state.</li>
+      <li><b>Next-Generation Firewall:</b> Includes deep packet inspection and malware protection.</li>
+    </ul>
+
+    <h3>Q5. Explain Cryptography Techniques.</h3>
+    <ul>
+      <li><b>Substitution Cipher:</b> Replaces characters (Caesar cipher).</li>
+      <li><b>Transposition Cipher:</b> Rearranges character positions.</li>
+      <li><b>Hashing:</b> Converts data into a fixed-length code (e.g., SHA-256).</li>
+    </ul>
+
+    <h3>Q6. Explain Intrusion Detection System (IDS) and its types.</h3>
+    <ul>
+      <li><b>Host-Based IDS (HIDS):</b> Monitors system-level activities.</li>
+      <li><b>Network-Based IDS (NIDS):</b> Monitors network traffic.</li>
+    </ul>
+
+    <h3>Q7. Explain Digital Signatures with working diagram.</h3>
+    <pre>
+Sender → [Private Key] → Signature → Receiver → [Public Key] → Verify
+    </pre>
+    <p>Used to ensure authenticity, non-repudiation, and integrity.</p>
+
+    <h3>Q8. Explain Security Policies and their importance.</h3>
+    <ul>
+      <li>Define acceptable use of information.</li>
+      <li>Provide clear rules to prevent security breaches.</li>
+      <li>Help in incident response and legal compliance.</li>
+    </ul>
+
+    <h3>Q9. What are Network Security Tools?</h3>
+    <ul>
+      <li>Firewalls – Block unauthorized access.</li>
+      <li>Antivirus – Detect and remove malware.</li>
+      <li>VPN – Secure remote connections.</li>
+      <li>Encryption tools – Protect data in transit.</li>
+    </ul>
+
+    <h3>Q10. Explain Access Control Mechanisms.</h3>
+    <ul>
+      <li><b>DAC (Discretionary Access Control):</b> Owner decides access.</li>
+      <li><b>MAC (Mandatory Access Control):</b> System enforces rules.</li>
+      <li><b>RBAC (Role-Based Access Control):</b> Access based on user roles.</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 Ravi Singh | PTU Study Hub
+  </footer>
+</body>
+
+</html>

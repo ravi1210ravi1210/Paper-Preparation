@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operating Systems – PTU Study Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <div><a href="index.html"><b>PTU Study Hub</b></a></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="datesheet.html">Date Sheet</a>
+      <a href="linux.html">Linux</a>
+      <a href="androin.html">Android</a>
+      <a href="cyber.html">Cyber Laws</a>
+      <a href="soft.html">Software Engg</a>
+      <a href="infosec.html">InfoSec</a>
+      <a href="math.html">Math</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Operating Systems (UGCA1923)</h1>
+    <p><strong>Exam Date:</strong> 11-Dec-2025 | <strong>Session:</strong> Evening | <strong>Marks:</strong> 2M + 10M
+      Pattern</p>
+
+    <h2>📘 2 Marks – Short Questions</h2>
+    <ol>
+      <li><b>Define Operating System.</b><br>An Operating System (OS) is system software that manages hardware and
+        software resources and provides services to applications.</li>
+      <li><b>Main functions of OS?</b><br>Process management, memory management, file management, device management,
+        security.</li>
+      <li><b>What is a process?</b><br>A process is a program in execution.</li>
+      <li><b>Define thread.</b><br>A thread is the smallest unit of CPU execution within a process.</li>
+      <li><b>What is CPU scheduling?</b><br>It determines which process runs next on the CPU.</li>
+      <li><b>What is deadlock?</b><br>A situation where two or more processes are waiting for each other forever.</li>
+      <li><b>What is paging?</b><br>A memory management scheme that eliminates the need for contiguous allocation of
+        physical memory.</li>
+      <li><b>Define semaphore.</b><br>A synchronization tool used to control access to shared resources.</li>
+      <li><b>What is a system call?</b><br>An interface between user programs and the OS kernel.</li>
+      <li><b>What is virtual memory?</b><br>A technique that allows execution of processes not completely in memory
+        using secondary storage.</li>
+    </ol>
+
+    <h2>🧠 10 Marks – Long Questions</h2>
+
+    <h3>Q1. Explain the main functions of an Operating System.</h3>
+    <ul>
+      <li><b>Process Management:</b> Manages processes, CPU scheduling, and multitasking.</li>
+      <li><b>Memory Management:</b> Allocates and deallocates memory space.</li>
+      <li><b>File Management:</b> Organizes data into files and directories.</li>
+      <li><b>Device Management:</b> Controls I/O devices using drivers.</li>
+      <li><b>Security and Protection:</b> Prevents unauthorized access.</li>
+    </ul>
+
+    <h3>Q2. Explain Process States with Diagram.</h3>
+    <p>Each process goes through a series of states during execution.</p>
+    <pre>
++---------+     +-----------+     +-----------+
+| New     | --> | Ready     | --> | Running   |
++---------+     +-----------+     +-----------+
+      ^                |               |
+      |                v               v
+      |            +-----------+   +-----------+
+      |            | Waiting   |   | Terminated|
+      |            +-----------+   +-----------+
+    </pre>
+
+    <h3>Q3. Explain CPU Scheduling Algorithms.</h3>
+    <ul>
+      <li><b>FCFS (First Come First Serve):</b> Processes are executed in arrival order.</li>
+      <li><b>SJF (Shortest Job First):</b> Process with shortest burst time executes first.</li>
+      <li><b>Priority Scheduling:</b> Highest priority process executes first.</li>
+      <li><b>Round Robin:</b> Each process gets a fixed time slice (quantum).</li>
+    </ul>
+
+    <h3>Q4. Explain Deadlock with conditions and prevention methods.</h3>
+    <p><b>Deadlock:</b> Occurs when processes hold resources and wait for others.</p>
+    <ul>
+      <li><b>Conditions for Deadlock:</b></li>
+      <ol>
+        <li>Mutual Exclusion</li>
+        <li>Hold and Wait</li>
+        <li>No Preemption</li>
+        <li>Circular Wait</li>
+      </ol>
+      <li><b>Prevention Methods:</b></li>
+      <ol>
+        <li>Avoid circular waiting (ordering of resources)</li>
+        <li>Allow preemption</li>
+        <li>Use resource allocation graph</li>
+      </ol>
+    </ul>
+
+    <h3>Q5. Explain Paging and Segmentation.</h3>
+    <ul>
+      <li><b>Paging:</b> Divides physical memory into fixed-size blocks (pages).</li>
+      <li><b>Segmentation:</b> Divides memory based on logical divisions (code, data, stack).</li>
+    </ul>
+
+    <h3>Q6. Explain File Management System.</h3>
+    <p>It deals with creation, deletion, reading, and writing of files.
+      The OS maintains file attributes like name, size, and type.</p>
+
+    <h3>Q7. Explain Virtual Memory with Diagram.</h3>
+    <p>Virtual memory uses both RAM and secondary storage to execute large processes.</p>
+    <pre>
+Logical Memory → [Page Table] → Physical Memory (RAM + Disk)
+    </pre>
+    <ul>
+      <li>Increases efficiency.</li>
+      <li>Allows multitasking.</li>
+    </ul>
+
+    <h3>Q8. Explain Process Synchronization using Semaphores.</h3>
+    <p>Semaphores are variables used to solve critical section problems.</p>
+    <pre>
+wait(S);
+Critical Section
+signal(S);
+    </pre>
+    <p>They prevent data inconsistency when multiple processes access shared resources.</p>
+
+    <h3>Q9. Explain Difference between Multiprogramming and Multitasking.</h3>
+    <table>
+      <tr>
+        <th>Aspect</th>
+        <th>Multiprogramming</th>
+        <th>Multitasking</th>
+      </tr>
+      <tr>
+        <td>Definition</td>
+        <td>Multiple programs in memory at once.</td>
+        <td>Multiple tasks executed by CPU seemingly at once.</td>
+      </tr>
+      <tr>
+        <td>Focus</td>
+        <td>Maximizes CPU usage.</td>
+        <td>Enhances user interaction.</td>
+      </tr>
+    </table>
+
+    <h3>Q10. Explain the concept of System Calls.</h3>
+    <p>System calls allow user-level programs to interact with the kernel (e.g., file creation, I/O).</p>
+    <ul>
+      <li>Types: Process control, File management, Device management, Information maintenance.</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 Ravi Singh | PTU Study Hub
+  </footer>
+</body>
+
+</html>

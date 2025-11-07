@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Android Programming – PTU Study Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <div><a href="index.html"><b>PTU Study Hub</b></a></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="datesheet.html">Date Sheet</a>
+      <a href="linux.html">Linux</a>
+      <a href="cyber.html">Cyber Laws</a>
+      <a href="soft.html">Software Engg</a>
+      <a href="os.html">OS</a>
+      <a href="infosec.html">InfoSec</a>
+      <a href="math.html">Math</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Android Programming (UGCA1943)</h1>
+    <p><strong>Exam Date:</strong> 26-Nov-2025 | <strong>Session:</strong> Evening | <strong>Marks:</strong> 2M + 10M
+      Pattern</p>
+
+    <h2>📘 2 Marks – Short Questions</h2>
+    <ol>
+      <li><b>What is Android?</b><br>An open-source mobile operating system developed by Google, based on the Linux
+        kernel.</li>
+      <li><b>Who founded Android?</b><br>Andy Rubin in 2003; acquired by Google in 2005.</li>
+      <li><b>What language is used in Android?</b><br>Java and Kotlin are the main programming languages.</li>
+      <li><b>What is Android Studio?</b><br>The official IDE used to build, test, and debug Android apps.</li>
+      <li><b>What is an Activity?</b><br>Represents a single screen in an Android app.</li>
+      <li><b>What is an Intent?</b><br>Used to start new activities or send data between components.</li>
+      <li><b>What is a Fragment?</b><br>A reusable UI part within an Activity.</li>
+      <li><b>What is an APK?</b><br>Android Package Kit – the installation file for apps.</li>
+      <li><b>What is AndroidManifest.xml?</b><br>File that contains essential app information like permissions and
+        activities.</li>
+      <li><b>What is a Layout?</b><br>Defines how UI elements are arranged in the app (Linear, Relative, etc.).</li>
+    </ol>
+
+    <h2>🧠 10 Marks – Long Questions</h2>
+
+    <h3>Q1. Explain Android Architecture with Diagram.</h3>
+    <p><b>Answer:</b> Android architecture consists of 4 layers:</p>
+    <ul>
+      <li><b>1. Applications Layer:</b> All user apps like Contacts, Camera, etc.</li>
+      <li><b>2. Application Framework:</b> Provides APIs for developers (Activity Manager, Content Provider).</li>
+      <li><b>3. Libraries & Runtime:</b> SQLite, WebKit, OpenGL + ART (Android Runtime).</li>
+      <li><b>4. Linux Kernel:</b> Hardware drivers, memory, power management.</li>
+    </ul>
+    <pre>
++----------------------------------+
+|     Applications (Apps)          |
++----------------------------------+
+| Application Framework (APIs)     |
++----------------------------------+
+| Libraries + Android Runtime (ART)|
++----------------------------------+
+|        Linux Kernel              |
++----------------------------------+
+    </pre>
+
+    <h3>Q2. Explain the main components of Android.</h3>
+    <ul>
+      <li><b>Activity:</b> Represents a UI screen.</li>
+      <li><b>Service:</b> Runs background tasks (e.g., music, updates).</li>
+      <li><b>Broadcast Receiver:</b> Responds to system-wide events.</li>
+      <li><b>Content Provider:</b> Manages shared data between apps.</li>
+      <li><b>Intent:</b> Used for communication between components.</li>
+    </ul>
+
+    <h3>Q3. Explain Activity Life Cycle with Diagram.</h3>
+    <p>The life cycle defines how an Activity behaves from start to destroy.</p>
+    <ul>
+      <li><b>onCreate()</b> – Activity created</li>
+      <li><b>onStart()</b> – Activity visible</li>
+      <li><b>onResume()</b> – Ready for interaction</li>
+      <li><b>onPause()</b> – Partially hidden</li>
+      <li><b>onStop()</b> – Fully hidden</li>
+      <li><b>onDestroy()</b> – Closed</li>
+    </ul>
+    <pre>
+onCreate() → onStart() → onResume()
+    ↓             ↑
+onPause() ← onStop() ← onDestroy()
+    </pre>
+
+    <h3>Q4. Explain Intent and its types.</h3>
+    <p><b>Intent:</b> A messaging object for starting activities or broadcasting.</p>
+    <p><b>Types:</b></p>
+    <ul>
+      <li><b>Explicit Intent:</b> Launches a specific activity.<br>
+        Example:
+        <pre>
+Intent i = new Intent(this, SecondActivity.class);
+startActivity(i);
+        </pre>
+      </li>
+      <li><b>Implicit Intent:</b> Requests system to perform an action (e.g., open browser).</li>
+    </ul>
+
+    <h3>Q5. Explain SQLite Database in Android.</h3>
+    <p>SQLite is a lightweight local database for app data storage.</p>
+    <pre>
+SQLiteDatabase db = openOrCreateDatabase("StudentDB", MODE_PRIVATE, null);
+db.execSQL("CREATE TABLE IF NOT EXISTS student(name TEXT, rollno INT)");
+db.execSQL("INSERT INTO student VALUES('Ravi', 101)");
+    </pre>
+
+    <h3>Q6. Explain AndroidManifest.xml file.</h3>
+    <p>Defines app configuration:</p>
+    <pre>
+<manifest>
+  <application android:label="MyApp">
+    <activity android:name=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
+    </pre>
+
+    <h3>Q7. Describe Layouts used in Android.</h3>
+    <ul>
+      <li><b>Linear Layout:</b> Arranges views in a single direction.</li>
+      <li><b>Relative Layout:</b> Positions elements relative to others.</li>
+      <li><b>Constraint Layout:</b> Modern, flexible layout.</li>
+      <li><b>Frame Layout:</b> Stack elements on top of each other.</li>
+    </ul>
+
+    <h3>Q8. Explain Android Development Tools.</h3>
+    <ul>
+      <li>Android Studio – Main IDE</li>
+      <li>Gradle – Build automation</li>
+      <li>AVD – Emulator for testing</li>
+      <li>ADB – Debug bridge for real devices</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 Ravi Singh | PTU Study Hub
+  </footer>
+</body>
+
+</html>
